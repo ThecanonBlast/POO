@@ -1,0 +1,104 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url(https://www.pcclean.io/wp-content/uploads/2020/4/ZB3uqq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 16px;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+
+  .btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }

@@ -1,0 +1,7 @@
+create database banco;
+use banco;
+create table usuarios{
+    idusuario int primary key auto_increment,
+    nombre text,
+    saldo double
+}
